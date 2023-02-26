@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
-<robot name="Basic_Robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="fus_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find Basic_Robot_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find Basic_Robot_description)/urdf/Basic_Robot.trans" />
-<xacro:include filename="$(find Basic_Robot_description)/urdf/Basic_Robot.gazebo" />
+<xacro:include filename="$(find fus_bot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find fus_bot_description)/urdf/fus_bot.trans" />
+<xacro:include filename="$(find fus_bot_description)/urdf/fus_bot.gazebo" />
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="0.047517484701943946 0.004858805619815502 -0.0300059480762529"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <geometry>
-      <mesh filename="package://Basic_Robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://fus_bot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <geometry>
-      <mesh filename="package://Basic_Robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://fus_bot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.0 -0.005 0.06"/>
     <geometry>
-      <mesh filename="package://Basic_Robot_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://fus_bot_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.0 -0.005 0.06"/>
     <geometry>
-      <mesh filename="package://Basic_Robot_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://fus_bot_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin rpy="0 0 0" xyz="-0.0 -0.005 -0.0"/>
     <geometry>
-      <mesh filename="package://Basic_Robot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://fus_bot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.0 -0.005 -0.0"/>
     <geometry>
-      <mesh filename="package://Basic_Robot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://fus_bot_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
